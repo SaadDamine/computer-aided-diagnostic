@@ -1,0 +1,16 @@
+INTRODUCTION
+
+	La détection d'objets est une technologie qui détecte les objets sémantiques d'une classe dans les images et vidéos numériques.
+	L'une de ses applications en temps réel est l'autopilotage des voitures.
+	En cela, notre tâche consiste à détecter de multiples objets à partir d'une image.
+	L'objet le plus courant à détecter dans cette application est la voiture, la moto et le piéton.
+	Pour localiser les objets dans l'image, nous utilisons la localisation d'objet et devons localiser plus d'un objet dans les systèmes en temps réel.
+	Il existe différentes techniques de détection d'objets, elles peuvent être divisées en deux catégories, la première est celle des algorithmes basés sur les classifications.
+	CNN et RNN font partie de cette catégorie.
+	Pour cela, nous devons sélectionner les régions intéressées dans l'image et les classer à l'aide du réseau neuronal convolutif.
+	Cette méthode est très lente car nous devons effectuer une prédiction pour chaque région sélectionnée.
+	La deuxième catégorie est celle des algorithmes basés sur les régressions.
+	La méthode YOLO fait partie de cette catégorie.
+Dans ce cas, nous ne sélectionnerons pas les régions intéressées à partir de l'image.
+	Au lieu de cela, nous prédisons les classes et les boîtes englobantes de l'image entière à une seule exécution de l'algorithme et détectons de multiples objets en utilisant un seul réseau neuronal. 	L'algorithme YOLO est rapide par rapport aux autres algorithmes de classification.
+	En temps réel, notre algorithme traite 45 images par seconde. L'algorithme YOLO fait des erreurs de localisation mais prédit moins de faux positifs en arrière-plan.
